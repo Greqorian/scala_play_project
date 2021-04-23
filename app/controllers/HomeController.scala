@@ -23,6 +23,6 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   }
 
   def hello() = Action { implicit request: Request[AnyContent] =>
-    Ok("HelloWorld")
+    Ok("Hello World")
   }
 }
