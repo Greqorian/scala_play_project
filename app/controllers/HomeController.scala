@@ -25,4 +25,8 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def hello() = Action { implicit request: Request[AnyContent] =>
     Ok("Hello World")
   }
+
+  def env() = Action { implicit request: Request[AnyContent] =>
+    Ok(System.getenv("JDBC_DATABASE_URL"))
+  }
 }

@@ -15,7 +15,7 @@
             
         ],
         "classpath": [
-            "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.4.8\\sbt-bloop-1.4.8.jar",
+            "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.4.8-19-4d9f966b\\sbt-bloop-1.4.8-19-4d9f966b.jar",
             "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\sbt-plugin_2.12_1.0\\2.8.8\\sbt-plugin-2.8.8.jar",
             "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.scala-sbt.org\\scalasbt\\sbt-plugin-releases\\org.foundweekends.giter8\\sbt-giter8-scaffold\\scala_2.12\\sbt_1.0\\0.11.0\\jars\\sbt-giter8-scaffold.jar",
             "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.scala-sbt.org\\scalasbt\\sbt-plugin-releases\\com.heroku\\sbt-heroku\\scala_2.12\\sbt_1.0\\2.1.4\\jars\\sbt-heroku.jar",
@@ -285,12 +285,12 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "sbt-bloop",
-                    "version": "1.4.8",
+                    "version": "1.4.8-19-4d9f966b",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.4.8\\sbt-bloop-1.4.8.jar"
+                            "path": "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.4.8-19-4d9f966b\\sbt-bloop-1.4.8-19-4d9f966b.jar"
                         }
                     ]
                 },
