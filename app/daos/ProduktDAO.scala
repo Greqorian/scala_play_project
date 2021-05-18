@@ -24,4 +24,4 @@ class ProduktDAO @Inject()(protected val dbConfigProvider: DatabaseConfigProvide
 
     def * = (name, color) <> (Produkt.tupled, Produkt.unapply)
   }
-} 
+}
