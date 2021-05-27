@@ -43,6 +43,7 @@ package controllers
 
 import daos.ProduktDAO
 import model.Produkt
+import model.User
 
 import javax.inject._
 import play.api._
@@ -73,5 +74,15 @@ class HomeController @Inject() (produktDao: ProduktDAO, controllerComponents: Co
   def insertProdukt = Action.async { implicit request =>
     val produkt: Produkt = produktForm.bindFromRequest.get
     produktDao.insert(produkt).map(_ => Redirect(routes.HomeController.index))
+  }
+
+  val userForm = Form(
+    mapping(
+      "name" -> text(),
+      "price" -> number())(User.apply)(User.unapply))
+
+  def insertUser = Action.async { implicit request =>
+    val user: User = userForm.bindFromRequest.get
+    userDao.insert(user).map(_ => Redirect(routes.HomeController.index))
   }
 }

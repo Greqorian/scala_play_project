@@ -7,6 +7,8 @@ GET     /                           controllers.HomeController.index()
 
 POST    /insert/produkt             controllers.HomeController.insertProdukt
 
+POST    /insert/user             controllers.HomeController.insertUser
+
 GET     /env                        controllers.HomeController.env()
 
 # Map static resources from the /public folder to the /assets URL path
