@@ -7,10 +7,21 @@
   <h2>User</h2>
 
   <form action="/insert/user" method="POST">
+    <input name="key" type="number" placeholder="1" />
     <input name="name" type="text" placeholder="name" />
-    <input name="price" type="number" placeholder="price" />
-    <input type="submit" />
+    <input name="surname" type="text" placeholder="surname" />
+    <input name="email" type="text" placeholder="email" />
+    <input name="password" type="text" placeholder="password" />
+    <input name="street" type="text" placeholder="street" />
+    <input name="city" type="text" placeholder="city" />
+    <input name="phone" type="number" placeholder="phone" />
+    <input name="birthdate" type="number" placeholder="birthdate" />
+   
   </form>
+
+
+
+
 
   <h2>Bisher erstellte Users:</h2>
   <table>
@@ -19,8 +30,15 @@
       <th>Preis</th>
     </tr>
     @for(user <- users){ <tr>
+      <td>@user.key</td>
       <td>@user.name</td>
-      <td>@user.price</td>
+      <td>@user.surname</td>
+      <td>@user.email</td>
+      <td>@user.password</td>
+      <td>@user.street</td>
+      <td>@user.city</td>
+      <td>@user.phone</td>
+      <td>@user.birthdate</td>
       </tr>
       }
   </table>

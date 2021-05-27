@@ -19,9 +19,16 @@ class UserDAO @Inject()(protected val dbConfigProvider: DatabaseConfigProvider)
 
   private class UsersTable(tag: Tag) extends Table[User](tag, "USER") {
 
-    def name = column[String]("NAME", O.PrimaryKey)
-    def color = column[Int]("PRICE")
+     def key = column[Int]("KEY", O.PrimaryKey)
+    def name = column[String]("NAME")
+    def surname = column[String]("SURNAME")
+    def email = column[String]("EMAIL")
+    def password = column[String]("PASSWORD")
+     def street = column[String]("STREET")
+      def city = column[String]("CITY")
+      def phone = column[Int]("PHONE")
+       def birthdate = column[Int]("BIRTHDATE")
 
-    def * = (name, color) <> (User.tupled, User.unapply)
+    def * = (key, name, surname, email, password, street, city, phone, birthdate) <> (User.tupled, User.unapply)
   }
 }

@@ -14,8 +14,11 @@ import play.api.mvc._
 import scala.concurrent.ExecutionContext
 
 @Singleton
-class HomeController @Inject() (userDao: UserDAO, controllerComponents: ControllerComponents)
-                               (implicit executionContext: ExecutionContext) extends AbstractController(controllerComponents) {
+class HomeController @Inject() (
+    userDao: UserDAO,
+    controllerComponents: ControllerComponents
+)(implicit executionContext: ExecutionContext)
+    extends AbstractController(controllerComponents) {
 
   // def index() = Action.async {
   //   produktDao.all().map { case (produkte) => Ok(views.html.index(produkte)) }
@@ -26,7 +29,7 @@ class HomeController @Inject() (userDao: UserDAO, controllerComponents: Controll
 
   def env() = Action { implicit request: Request[AnyContent] =>
     Ok("Nothing to see here")
-    //Ok(System.getenv("JDBC_DATABASE_URL"))
+  //Ok(System.getenv("JDBC_DATABASE_URL"))
   }
 
   // val produktForm = Form(
@@ -41,8 +44,18 @@ class HomeController @Inject() (userDao: UserDAO, controllerComponents: Controll
 
   val userForm = Form(
     mapping(
+      "key" -> number(),
       "name" -> text(),
-      "price" -> number())(User.apply)(User.unapply))
+      "surname" -> text(),
+      "email" -> text(),
+      "password" -> text(),
+      "street" -> text(),
+      "city" -> text(),
+      "phone" -> number(),
+       "birthday" -> number()
+
+    )(User.apply)(User.unapply)
+  )
 
   def insertUser = Action.async { implicit request =>
     val user: User = userForm.bindFromRequest.get
