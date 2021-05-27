@@ -1,7 +1,7 @@
 package model
 
 case class User(
-    key: Int,
+    id: Int,
     name: String,
     surname: String,
     email: String,

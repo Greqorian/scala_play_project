@@ -44,7 +44,7 @@ class HomeController @Inject() (
 
   val userForm = Form(
     mapping(
-      "key" -> number(),
+      "id" -> number(),
       "name" -> text(),
       "surname" -> text(),
       "email" -> text(),

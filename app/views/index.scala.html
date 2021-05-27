@@ -7,7 +7,7 @@
   <h2>User</h2>
 
   <form action="/insert/user" method="POST">
-    <input name="key" type="number" placeholder="1" />
+    <input name="id" type="number" placeholder="id" />
     <input name="name" type="text" placeholder="name" />
     <input name="surname" type="text" placeholder="surname" />
     <input name="email" type="text" placeholder="email" />
@@ -30,7 +30,7 @@
       <th>Preis</th>
     </tr>
     @for(user <- users){ <tr>
-      <td>@user.key</td>
+      <td>@user.id</td>
       <td>@user.name</td>
       <td>@user.surname</td>
       <td>@user.email</td>

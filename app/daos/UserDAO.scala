@@ -19,7 +19,7 @@ class UserDAO @Inject()(protected val dbConfigProvider: DatabaseConfigProvider)
 
   private class UsersTable(tag: Tag) extends Table[User](tag, "USER") {
 
-     def key = column[Int]("KEY", O.PrimaryKey)
+     def id = column[Int]("ID", O.PrimaryKey)
     def name = column[String]("NAME")
     def surname = column[String]("SURNAME")
     def email = column[String]("EMAIL")
@@ -29,6 +29,6 @@ class UserDAO @Inject()(protected val dbConfigProvider: DatabaseConfigProvider)
       def phone = column[Int]("PHONE")
        def birthdate = column[Int]("BIRTHDATE")
 
-    def * = (key, name, surname, email, password, street, city, phone, birthdate) <> (User.tupled, User.unapply)
+    def * = (id, name, surname, email, password, street, city, phone, birthdate) <> (User.tupled, User.unapply)
   }
 }
