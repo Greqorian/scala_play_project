@@ -11,13 +11,13 @@ class UserDAO @Inject()(protected val dbConfigProvider: DatabaseConfigProvider)
                           (implicit executionContext: ExecutionContext) extends HasDatabaseConfigProvider[JdbcProfile] {
   import profile.api._
 
-  private val Users = TableQuery[ProduktTable]
+  private val Users = TableQuery[UsersTable]
 
   def all(): Future[Seq[User]] = db.run(Users.result)
 
-  def insert(user: User): Future[Unit] = db.run(Users += user).map { _ => () }
+  def insert(users: User): Future[Unit] = db.run(Users += users).map { _ => () }
 
-  private class ProduktTable(tag: Tag) extends Table[User](tag, "PRODUKT") {
+  private class UsersTable(tag: Tag) extends Table[User](tag, "USER") {
 
     def name = column[String]("NAME", O.PrimaryKey)
     def color = column[Int]("PRICE")

@@ -1787,3 +1787,99 @@ WARNING: Unmatched cancel notification for request id 750
 [0m2021.05.27 22:25:31 INFO  time: compiled root-test in 0.69s[0m
 [0m2021.05.27 22:26:00 INFO  compiling root (1 scala source)[0m
 [0m2021.05.27 22:26:01 INFO  time: compiled root in 1.64s[0m
+May 27, 2021 10:26:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 824
+May 27, 2021 10:27:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 843
+[0m2021.05.27 22:28:20 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:28:23 INFO  time: compiled root in 2.04s[0m
+May 27, 2021 10:28:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 876
+May 27, 2021 10:28:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 882
+May 27, 2021 10:29:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 896
+[0m2021.05.27 22:32:08 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:32:08 INFO  time: compiled root in 0.25s[0m
+[0m2021.05.27 22:42:47 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:42:47 INFO  time: compiled root in 0.15s[0m
+[0m2021.05.27 22:43:01 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:43:01 INFO  time: compiled root in 0.16s[0m
+[0m2021.05.27 22:43:04 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:43:04 INFO  time: compiled root in 0.15s[0m
+[0m2021.05.27 22:44:59 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:44:59 INFO  time: compiled root in 0.16s[0m
+[0m2021.05.27 22:45:02 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:45:02 INFO  time: compiled root in 0.15s[0m
+May 27, 2021 10:45:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1314
+[0m2021.05.27 22:45:54 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:45:54 INFO  time: compiled root in 0.15s[0m
+[0m2021.05.27 22:46:05 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:46:05 INFO  time: compiled root in 0.14s[0m
+[0m2021.05.27 22:46:41 INFO  compiling root (1 scala source)[0m
+[0m2021.05.27 22:46:41 INFO  time: compiled root in 0.15s[0m
+May 27, 2021 10:47:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1369
+[0m2021.05.27 22:47:38 INFO  compiling root (2 scala sources)[0m
+[0m2021.05.27 22:47:38 INFO  time: compiled root in 0.22s[0m
+[0m2021.05.27 22:47:46 INFO  compiling root (2 scala sources)[0m
+[0m2021.05.27 22:47:46 INFO  time: compiled root in 0.21s[0m
+[0m2021.05.27 22:49:51 INFO  compiling root (2 scala sources)[0m
+[0m2021.05.27 22:49:51 INFO  time: compiled root in 0.23s[0m
+[0m2021.05.27 22:50:07 INFO  compiling root (2 scala sources)[0m
+[0m2021.05.27 22:50:07 INFO  time: compiled root in 0.21s[0m
+May 27, 2021 10:50:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1529
+[0m2021.05.27 22:50:11 INFO  compiling root (2 scala sources)[0m
+[0m2021.05.27 22:50:11 INFO  time: compiled root in 0.23s[0m
+May 27, 2021 10:52:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1573
+[0m2021.05.27 22:52:30 INFO  compiling root (2 scala sources)[0m
+[0m2021.05.27 22:52:30 INFO  time: compiled root in 0.21s[0m
+[0m2021.05.27 22:52:49 INFO  compiling root (2 scala sources)[0m
+[0m2021.05.27 22:52:49 INFO  time: compiled root in 0.2s[0m
+[0m2021.05.27 22:52:57 INFO  compiling root (2 scala sources)[0m
+[0m2021.05.27 22:52:57 INFO  time: compiled root in 0.23s[0m
+May 27, 2021 10:53:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1613
+[0m2021.05.27 22:54:07 INFO  compiling root (2 scala sources)[0m
+[0m2021.05.27 22:54:07 INFO  time: compiled root in 0.23s[0m
+[0m2021.05.27 22:54:24 INFO  compiling root (3 scala sources)[0m
+[0m2021.05.27 22:54:24 INFO  time: compiled root in 0.2s[0m
+May 27, 2021 10:54:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1670
+May 27, 2021 10:54:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1682
+[0m2021.05.27 22:54:40 INFO  compiling root (3 scala sources)[0m
+[0m2021.05.27 22:54:40 INFO  time: compiled root in 0.26s[0m
+[0m2021.05.27 22:54:49 INFO  compiling root (3 scala sources)[0m
+[0m2021.05.27 22:54:49 INFO  time: compiled root in 0.21s[0m
+[0m2021.05.27 22:55:01 INFO  compiling root (3 scala sources)[0m
+[0m2021.05.27 22:55:01 INFO  time: compiled root in 0.23s[0m
+May 27, 2021 10:55:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1738
+May 27, 2021 10:55:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1758
+[0m2021.05.27 22:55:15 INFO  compiling root (4 scala sources)[0m
+[0m2021.05.27 22:55:15 INFO  time: compiled root in 0.23s[0m
+May 27, 2021 10:55:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1771
+May 27, 2021 10:55:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1789
+[0m2021.05.27 22:59:29 INFO  compiling root (4 scala sources)[0m
+[0m2021.05.27 22:59:29 INFO  time: compiled root in 0.22s[0m
+May 27, 2021 10:59:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1837
+May 27, 2021 10:59:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1843
+[0m2021.05.27 22:59:36 INFO  shutting down Metals[0m
+[0m2021.05.27 22:59:36 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.27 22:59:36 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.27 22:59:36 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
