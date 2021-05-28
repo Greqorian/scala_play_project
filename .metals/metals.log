@@ -2109,3 +2109,7 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.05.28 09:36:36 INFO  time: indexed workspace in 6.24s[0m
 May 28, 2021 10:29:04 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2021.05.28 10:35:54 INFO  compiling root (9 scala sources and 1 java source)[0m
+[0m2021.05.28 10:35:54 INFO  time: compiled root in 0.96s[0m
+May 28, 2021 10:36:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
