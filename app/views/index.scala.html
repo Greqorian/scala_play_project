@@ -2,51 +2,9 @@
 @(users: Seq[User])
 
 @main("Welcome to Play") {
-<h1>User Administration!</h1>
-<div id="produkte">
-  <h2>Create user:</h2>
-
-  <form action="/insert/user" method="POST">
-    <input name="id" type="number" placeholder="id" />
-    <input name="name" type="text" placeholder="name" />
-    <input name="surname" type="text" placeholder="surname" />
-    <input name="email" type="text" placeholder="email" />
-    <input name="password" type="text" placeholder="password" />
-    <input name="street" type="text" placeholder="street" />
-    <input name="city" type="text" placeholder="city" />
-   
-    <input type="submit"/>
-   
-  </form>
-  <h2> Users:</h2>
-  <table>
-    <tr>
-      <th>id</th>
-      <th>Name</th>
-      <th>Surname</th>
-      <th>email</th>
-      <th>password</th>
-      <th>street</th>
-      <th>city</th>
-  
-    </tr>
-    @for(user <- users){ <tr>
-      <td>@user.id</td>
-      <td>@user.name</td>
-      <td>@user.surname</td>
-      <td>@user.email</td>
-      <td>@user.password</td>
-      <td>@user.street</td>
-      <td>@user.city</td>
-      
-      </tr>
-      }
-  </table>
-</div>
-}
 
 
-<!-- <div class="main-block">
+ <div class="main-block">
   <form action="/insert/user" method="POST">
     <h1>CREATE A USER ACCOUNT</h1>
     <fieldset>
@@ -74,7 +32,7 @@
 
           <div>
             <div class="birthdate">
-              <label>Birthdate*</label>
+              <label>Birthdate</label>
               <div class="bdate-block">
                 <select class="day" name="birthdate">
                   <option value=""></option>
@@ -127,4 +85,33 @@
         </div>
     </fieldset>
     <button type="submit" href="/">Submit</button>
-  </form> -->
+  </form> 
+
+
+
+  <h2> Users:</h2>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>email</th>
+      <th>password</th>
+      <th>street</th>
+      <th>city</th>
+  
+    </tr>
+    @for(user <- users){ <tr>
+      <td>@user.id</td>
+      <td>@user.name</td>
+      <td>@user.surname</td>
+      <td>@user.email</td>
+      <td>@user.password</td>
+      <td>@user.street</td>
+      <td>@user.city</td>
+      
+      </tr>
+      }
+  </table>
+</div>
+}
