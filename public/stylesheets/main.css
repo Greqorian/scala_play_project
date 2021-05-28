@@ -107,20 +107,22 @@ html, body {
     button:hover {
     background: #82b534;
     }
-
+    .table-block {
+        display: flex;
+        justify-content: center;
+      flex-direction: column;
+       
+        }
     #table {
-        border: 1px solid #666; 
+       
         border-radius: 5px; 
         width: 100%;
         border-collapse: collapse;
         text-align: left;
     }
-    #table th {
-        height: 70px;
-      }
 
     #table th, td {
-        padding: 15px;
+        padding: 10px;
         text-align: left;
         border-bottom: 1px solid #666;
       }
