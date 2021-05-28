@@ -25,7 +25,7 @@ class UserDAO @Inject() (
 
   private class UsersTable(tag: Tag) extends Table[User](tag, "USER") {
 
-    def id = column[Int]("ID", O.PrimaryKey, O.AutoInc)
+    def id = column[Int]("ID", O.PrimaryKey)
     def name = column[String]("NAME")
     def surname = column[String]("SURNAME")
     def email = column[String]("EMAIL")
