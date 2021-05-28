@@ -1,0 +1,31 @@
+@import model.User
+@(users: Seq[User])
+
+@table("Table") {
+
+  <h2> Users:</h2>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>email</th>
+      <th>password</th>
+      <th>street</th>
+      <th>city</th>
+  
+    </tr>
+    @for(user <- users){ <tr>
+      <td>@user.id</td>
+      <td>@user.name</td>
+      <td>@user.surname</td>
+      <td>@user.email</td>
+      <td>@user.password</td>
+      <td>@user.street</td>
+      <td>@user.city</td>
+      
+      </tr>
+      }
+  </table>
+</div>
+}

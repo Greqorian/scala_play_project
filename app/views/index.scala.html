@@ -1,7 +1,7 @@
 @import model.User
 @(users: Seq[User])
 
-@main("Welcome to Play") {
+@main("Users Administration") {
 
 
  <div class="main-block">
@@ -87,7 +87,7 @@
     <button type="submit" href="/">Submit</button>
   </form> 
 
-
+@table
 
   <h2> Users:</h2>
   <table>
