@@ -8,6 +8,4 @@ case class User(
     password: String,
     street: String,
     city: String
-    // phone: Int,
-    // birthdate: Int
 )
