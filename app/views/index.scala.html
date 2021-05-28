@@ -4,7 +4,7 @@
 @main("Users Administration") {
 
 
- <div class="main-block">
+<div class="main-block">
   <form action="/insert/user" method="POST">
     <h1>CREATE A USER ACCOUNT</h1>
     <fieldset>
@@ -80,40 +80,44 @@
       </legend>
       <div class="terms-mailing">
         <div class="checkbox">
-          <input type="checkbox"><span>I accept the <a
-              href="https://www.w3docs.com/privacy-policy">Privacy Policy for W3Docs.</a></span>
+          <input type="checkbox"><span>I accept the <a href="https://www.w3docs.com/privacy-policy">Privacy Policy for
+              W3Docs.</a></span>
         </div>
     </fieldset>
     <button type="submit" href="/">Submit</button>
-  </form> 
+  </form>
 
 </div>
 
 
 <div class="main-block">
+
+
   <h2> Users:</h2>
-  <table class="table">
-    <tr>
-      <th>id</th>
-      <th>Name</th>
-      <th>Surname</th>
-      <th>email</th>
-      <th>password</th>
-      <th>street</th>
-      <th>city</th>
-  
-    </tr>
-    @for(user <- users){ <tr>
-      <td>@user.id</td>
-      <td>@user.name</td>
-      <td>@user.surname</td>
-      <td>@user.email</td>
-      <td>@user.password</td>
-      <td>@user.street</td>
-      <td>@user.city</td>
-      
+  <div class="account-details">
+    <table class="table">
+      <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>email</th>
+        <th>password</th>
+        <th>street</th>
+        <th>city</th>
+
       </tr>
-      }
-  </table>
+      @for(user <- users){ <tr>
+        <td>@user.id</td>
+        <td>@user.name</td>
+        <td>@user.surname</td>
+        <td>@user.email</td>
+        <td>@user.password</td>
+        <td>@user.street</td>
+        <td>@user.city</td>
+
+        </tr>
+        }
+    </table>
+  </div>
 </div>
 }
