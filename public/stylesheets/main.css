@@ -107,6 +107,25 @@ html, body {
     button:hover {
     background: #82b534;
     }
+
+    #table {
+        border: 1px solid #666; 
+        border-radius: 5px; 
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+    }
+    #table th {
+        height: 70px;
+      }
+
+    #table th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #666;
+      }
+
+
     @media (min-width: 568px) {
     .account-details >div, .personal-details >div {
     width: 50%;
@@ -117,23 +136,7 @@ html, body {
     input {
     width: 60%;
     }
-    .table {
-        /* border: 1px solid #666; */
-        
-        border-radius: 5px; 
-        width: 100%;
-        border-collapse: collapse;
-        text-align: left;
-    }
-    th {
-        height: 70px;
-      }
-
-    th, td {
-        padding: 15px;
-        text-align: left;
-        border-bottom: 1px solid #666;
-      }
+   
 
     select, .children, .gender, .bdate-block {
     width: calc(60% + 16px);
