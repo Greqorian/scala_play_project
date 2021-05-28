@@ -5,6 +5,8 @@
 
 GET     /                           controllers.HomeController.index()
 
+GET     /table                           controllers.HomeController.table()
+
 POST    /insert/user             controllers.HomeController.insertUser
 
 GET     /env                        controllers.HomeController.env()

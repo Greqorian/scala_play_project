@@ -24,6 +24,10 @@ class HomeController @Inject() (
     userDao.all().map { case (users) => Ok(views.html.index(users)) }
   }
 
+  def table() = Action.async {
+    userDao.all().map { case (users) => Ok(views.html.table(users)) }
+  }
+
   def env() = Action { implicit request: Request[AnyContent] =>
     Ok("Nothing to see here")
   //Ok(System.getenv("JDBC_DATABASE_URL"))
