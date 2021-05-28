@@ -51,8 +51,8 @@ class HomeController @Inject() (
       "password" -> text(),
       "street" -> text(),
       "city" -> text(),
-      "phone" -> number(),
-       "birthday" -> number()
+      // "phone" -> number(),
+      //  "birthday" -> number()
 
     )(User.apply)(User.unapply)
   )

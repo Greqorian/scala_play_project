@@ -14,9 +14,7 @@
     <input name="password" type="text" placeholder="password" />
     <input name="street" type="text" placeholder="street" />
     <input name="city" type="text" placeholder="city" />
-    <input name="phone" type="number" placeholder="phone" />
-    <input name="birthdate" type="number" placeholder="birthdate" />
-
+   
     <input type="submit"/>
    
   </form>
@@ -114,8 +112,7 @@
       <th>password</th>
       <th>street</th>
       <th>city</th>
-      <th>phone</th>
-      <th>birthdate</th>
+  
     </tr>
     @for(user <- users){ <tr>
       <td>@user.id</td>
@@ -125,8 +122,7 @@
       <td>@user.password</td>
       <td>@user.street</td>
       <td>@user.city</td>
-      <td>@user.phone</td>
-      <td>@user.birthdate</td>
+      
       </tr>
       }
   </table>

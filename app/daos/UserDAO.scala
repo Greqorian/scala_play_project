@@ -26,9 +26,9 @@ class UserDAO @Inject()(protected val dbConfigProvider: DatabaseConfigProvider)
     def password = column[String]("PASSWORD")
      def street = column[String]("STREET")
       def city = column[String]("CITY")
-      def phone = column[Int]("PHONE")
-       def birthdate = column[Int]("BIRTHDATE")
+      // def phone = column[Int]("PHONE")
+      //  def birthdate = column[Int]("BIRTHDATE")
 
-    def * = (id, name, surname, email, password, street, city, phone, birthdate) <> (User.tupled, User.unapply)
+    def * = (id, name, surname, email, password, street, city) <> (User.tupled, User.unapply)
   }
 }
