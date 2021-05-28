@@ -117,8 +117,9 @@ html, body {
     input {
     width: 60%;
     }
-    table {
+    .table {
         /* border: 1px solid #666; */
+        
         border-radius: 5px; 
         width: 100%;
         border-collapse: collapse;
