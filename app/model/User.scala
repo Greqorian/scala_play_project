@@ -7,5 +7,7 @@ case class User(
     email: String,
     password: String,
     street: String,
-    city: String
+    city: String,
+    phone: Int,
+    birthdate: Int
 )

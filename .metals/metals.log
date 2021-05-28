@@ -2266,3 +2266,269 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.05.28 14:34:02 INFO  [success] Total time: 2 s, completed 28 May 2021, 14:34:02[0m
 [0m2021.05.28 14:34:06 INFO  [info] loading settings for project root from build.sbt ...[0m
 [0m2021.05.28 14:34:06 INFO  [info] set current project to scala-play-app (in build file:/C:/Apps/Scala/scala-app/scala_play_project/)[0m
+[0m2021.05.28 14:34:08 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.05.28 14:34:08 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.05.28 14:34:08 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.05.28 14:34:09 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.05.28 14:34:09 INFO  [success] Total time: 2 s, completed 28 May 2021, 14:34:09[0m
+[0m2021.05.28 14:34:09 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.05.28 14:34:09 INFO  time: ran 'sbt bloopInstall' in 17s[0m
+[0m2021.05.28 14:34:09 INFO  Disconnecting from Bloop session...[0m
+[0m2021.05.28 14:34:09 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.28 14:34:09 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.28 14:34:09 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.28 14:34:09 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 40594'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from 'c:\Apps\Scala\scala-app\scala_play_project\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Apps\Scala\scala-app\scala_play_project\.bloop\root-test.json'
+[0m[32m[D][0m Loading project from 'c:\Apps\Scala\scala-app\scala_play_project\.bloop\root.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:40594...
+The server is listening for incoming connections at tcp://127.0.0.1:40594...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.28 14:34:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\greqo\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.05.28 14:34:10 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.05.28 14:34:10 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol tcp --port 13458'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 30744'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:30744...
+The server is listening for incoming connections at tcp://127.0.0.1:30744...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:13458...
+The server is listening for incoming connections at tcp://127.0.0.1:13458...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.28 14:34:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\greqo\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.05.28 14:34:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\greqo\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.05.28 14:34:10 INFO  time: Connected to build server in 0.73s[0m
+[0m2021.05.28 14:34:10 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.05.28 14:34:15 INFO  time: indexed workspace in 4.95s[0m
+[0m2021.05.28 14:35:14 INFO  compiling root (9 scala sources and 1 java source)[0m
+May 28, 2021 2:35:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/publishDiagnostics",
+  "params": {
+    "textDocument": {
+      "uri": "file:///C:/Apps/Scala/playtest/scala-play/app/controllers/HomeController.scala"
+    },
+    "buildTarget": {
+      "uri": "file:/C:/Apps/Scala/scala-app/scala_play_project/?id\u003droot"
+    },
+    "diagnostics": [
+      {
+        "range": {
+          "start": {
+            "line": 80,
+            "character": 49
+          },
+          "end": {
+            "line": 80,
+            "character": 76
+          }
+        },
+        "severity": 2,
+        "code": "    produktDao.insert(produkt).map(_ \u003d\u003e Redirect(routes.HomeController.index))",
+        "source": "bloop",
+        "message": "Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method index,\nor remove the empty argument list from its definition (Java-defined methods are exempt).\nIn Scala 3, an unapplied method like this will be eta-expanded into a function."
+      }
+    ],
+    "reset": true
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 80 is not a valid line number, allowed [0..50]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionLspRange.toMeta(CommonMtagsEnrichments.scala:198)
+	at scala.meta.internal.parsing.TokenEditDistance.toRevised(TokenEditDistance.scala:58)
+	at scala.meta.internal.metals.Diagnostics.toFreshDiagnostic(Diagnostics.scala:221)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3(Diagnostics.scala:189)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3$adapted(Diagnostics.scala:188)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.onPublishDiagnostics(Diagnostics.scala:156)
+	at scala.meta.internal.metals.Diagnostics.onBuildPublishDiagnostics(Diagnostics.scala:123)
+	at scala.meta.internal.metals.ForwardingMetalsBuildClient.onBuildPublishDiagnostics(ForwardingMetalsBuildClient.scala:99)
+	... 16 more
+
+May 28, 2021 2:35:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/taskFinish",
+  "params": {
+    "taskId": {
+      "id": "1"
+    },
+    "eventTime": 1622205319651,
+    "message": "Compiled \u0027root\u0027",
+    "status": 1,
+    "dataKind": "compile-report",
+    "data": {
+      "target": {
+        "uri": "file:/C:/Apps/Scala/scala-app/scala_play_project/?id\u003droot"
+      },
+      "errors": 0,
+      "warnings": 2,
+      "isNoOp": false,
+      "isLastCycle": true,
+      "clientDir": "file:///C:/Apps/Scala/scala-app/scala_play_project/.bloop/root/bloop-bsp-clients-classes/classes-Metals-Cpv0xSJYQBmb_Uir9mZG6Q\u003d\u003d/",
+      "analysisOut": "file:///C:/Apps/Scala/scala-app/scala_play_project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 80 is not a valid line number, allowed [0..50]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionLspRange.toMeta(CommonMtagsEnrichments.scala:198)
+	at scala.meta.internal.parsing.TokenEditDistance.toRevised(TokenEditDistance.scala:58)
+	at scala.meta.internal.metals.Diagnostics.toFreshDiagnostic(Diagnostics.scala:221)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3(Diagnostics.scala:189)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3$adapted(Diagnostics.scala:188)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:165)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnosticsBuffer$1(Diagnostics.scala:210)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnosticsBuffer$1$adapted(Diagnostics.scala:210)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:79)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnosticsBuffer(Diagnostics.scala:210)
+	at scala.meta.internal.metals.Diagnostics.onFinishCompileBuildTarget(Diagnostics.scala:78)
+	at scala.meta.internal.metals.ForwardingMetalsBuildClient.$anonfun$buildTaskFinish$2(ForwardingMetalsBuildClient.scala:158)
+	at scala.Option.foreach(Option.scala:407)
+	at scala.meta.internal.metals.ForwardingMetalsBuildClient.$anonfun$buildTaskFinish$1(ForwardingMetalsBuildClient.scala:156)
+	at scala.meta.internal.metals.ForwardingMetalsBuildClient.$anonfun$buildTaskFinish$1$adapted(ForwardingMetalsBuildClient.scala:155)
+	at scala.Option.foreach(Option.scala:407)
+	at scala.meta.internal.metals.ForwardingMetalsBuildClient.buildTaskFinish(ForwardingMetalsBuildClient.scala:155)
+	... 16 more
+
+May 28, 2021 2:35:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+[0m2021.05.28 14:35:54 INFO  time: code lens generation in 3.35s[0m
+[0m2021.05.28 14:35:54 INFO  time: code lens generation in 5.61s[0m
+May 28, 2021 2:36:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22
+May 28, 2021 2:38:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.05.28 14:39:28 INFO  shutting down Metals[0m
+[0m2021.05.28 14:39:28 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.28 14:39:28 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.28 14:39:28 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.28 14:39:42 INFO  Started: Metals version 0.10.3 in workspace 'C:\Apps\Scala\scala-app\scala_play_project' for client Visual Studio Code 1.56.2.[0m
+[0m2021.05.28 14:39:50 INFO  time: initialize in 7.75s[0m
+[0m2021.05.28 14:39:50 INFO  Attempting to connect to the build server...[0m
+[0m2021.05.28 14:39:50 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 26640'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:26640...
+The server is listening for incoming connections at tcp://127.0.0.1:26640...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.28 14:39:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\greqo\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.05.28 14:39:51 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.05.28 14:39:51Opening a bsp server connection with 'bsp --protocol tcp --port 12709'... INFO 
+ Attempting to connect to the build server...[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 26864'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:12709...
+The server is listening for incoming connections at tcp://127.0.0.1:12709...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:26864...
+The server is listening for incoming connections at tcp://127.0.0.1:26864...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.28 14:39:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\greqo\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.05.28 14:39:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\greqo\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.05.28 14:39:52 INFO  time: Connected to build server in 1.68s[0m
+[0m2021.05.28 14:39:52 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.05.28 14:39:57 INFO  time: indexed workspace in 5.5s[0m
+May 28, 2021 2:40:40 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2021.05.28 14:45:43 INFO  compiling root (9 scala sources and 1 java source)[0m
+[0m2021.05.28 14:45:46 INFO  compiling root (9 scala sources and 1 java source)[0m
+[0m2021.05.28 14:50:04 INFO  compiling root (9 scala sources and 1 java source)[0m
+[0m2021.05.28 14:54:08 INFO  compiling root (9 scala sources and 1 java source)[0m
+[0m2021.05.28 14:54:10 INFO  compiling root (9 scala sources and 1 java source)[0m

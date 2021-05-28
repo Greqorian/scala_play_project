@@ -7,10 +7,8 @@ import slick.jdbc.JdbcProfile
 import javax.inject.Inject
 import scala.concurrent.{ExecutionContext, Future}
 
-class UserDAO @Inject() (
-    protected val dbConfigProvider: DatabaseConfigProvider
-)(implicit executionContext: ExecutionContext)
-    extends HasDatabaseConfigProvider[JdbcProfile] {
+class UserDAO @Inject()(protected val dbConfigProvider: DatabaseConfigProvider)
+                          (implicit executionContext: ExecutionContext) extends HasDatabaseConfigProvider[JdbcProfile] {
   import profile.api._
 
   private val Users = TableQuery[UsersTable]
@@ -21,22 +19,16 @@ class UserDAO @Inject() (
 
   private class UsersTable(tag: Tag) extends Table[User](tag, "USER") {
 
-    def id = column[Int]("ID", O.PrimaryKey)
+     def id = column[Int]("ID", O.PrimaryKey)
     def name = column[String]("NAME")
     def surname = column[String]("SURNAME")
     def email = column[String]("EMAIL")
     def password = column[String]("PASSWORD")
-    def street = column[String]("STREET")
-    def city = column[String]("CITY")
+     def street = column[String]("STREET")
+      def city = column[String]("CITY")
+      def phone = column[Int]("PHONE")
+       def birthdate = column[Int]("BIRTHDATE")
 
-    def * = (
-      id,
-      name,
-      surname,
-      email,
-      password,
-      street,
-      city
-    ) <> (User.tupled, User.unapply)
+    def * = (id, name, surname, email, password, street, city, phone, birthdate) <> (User.tupled, User.unapply)
   }
 }

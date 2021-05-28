@@ -2,21 +2,21 @@
     "version": "1.4.0",
     "project": {
         "name": "root-test",
-        "directory": "C:\\Apps\\Scala\\scala-app\\scala_play_project",
-        "workspaceDir": "C:\\Apps\\Scala\\scala-app\\scala_play_project",
+        "directory": "C:\\Apps\\Scala\\playtest\\scala-play",
+        "workspaceDir": "C:\\Apps\\Scala\\playtest\\scala-play",
         "sources": [
-            "C:\\Apps\\Scala\\scala-app\\scala_play_project\\test-2.13",
-            "C:\\Apps\\Scala\\scala-app\\scala_play_project\\test",
-            "C:\\Apps\\Scala\\scala-app\\scala_play_project\\test",
-            "C:\\Apps\\Scala\\scala-app\\scala_play_project\\target\\scala-2.13\\src_managed\\test",
-            "C:\\Apps\\Scala\\scala-app\\scala_play_project\\target\\scala-2.13\\twirl\\test",
-            "C:\\Apps\\Scala\\scala-app\\scala_play_project\\target\\scala-2.13\\routes\\test"
+            "C:\\Apps\\Scala\\playtest\\scala-play\\test-2.13",
+            "C:\\Apps\\Scala\\playtest\\scala-play\\test",
+            "C:\\Apps\\Scala\\playtest\\scala-play\\test",
+            "C:\\Apps\\Scala\\playtest\\scala-play\\target\\scala-2.13\\src_managed\\test",
+            "C:\\Apps\\Scala\\playtest\\scala-play\\target\\scala-2.13\\twirl\\test",
+            "C:\\Apps\\Scala\\playtest\\scala-play\\target\\scala-2.13\\routes\\test"
         ],
         "dependencies": [
             "root"
         ],
         "classpath": [
-            "C:\\Apps\\Scala\\scala-app\\scala_play_project\\.bloop\\root\\scala-2.13\\classes",
+            "C:\\Apps\\Scala\\playtest\\scala-play\\.bloop\\root\\scala-2.13\\classes",
             "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.5\\scala-library-2.13.5.jar",
             "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\twirl-api_2.13\\1.5.1\\twirl-api_2.13-1.5.1.jar",
             "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\play-server_2.13\\2.8.8\\play-server_2.13-2.8.8.jar",
@@ -152,11 +152,11 @@
             "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\eclipse\\jetty\\jetty-http\\9.4.20.v20190813\\jetty-http-9.4.20.v20190813.jar",
             "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\eclipse\\jetty\\websocket\\websocket-api\\9.4.20.v20190813\\websocket-api-9.4.20.v20190813.jar"
         ],
-        "out": "C:\\Apps\\Scala\\scala-app\\scala_play_project\\.bloop\\root",
-        "classesDir": "C:\\Apps\\Scala\\scala-app\\scala_play_project\\.bloop\\root\\scala-2.13\\test-classes",
+        "out": "C:\\Apps\\Scala\\playtest\\scala-play\\.bloop\\root",
+        "classesDir": "C:\\Apps\\Scala\\playtest\\scala-play\\.bloop\\root\\scala-2.13\\test-classes",
         "resources": [
-            "C:\\Apps\\Scala\\scala-app\\scala_play_project\\test\\resources",
-            "C:\\Apps\\Scala\\scala-app\\scala_play_project\\target\\scala-2.13\\resource_managed\\test"
+            "C:\\Apps\\Scala\\playtest\\scala-play\\test\\resources",
+            "C:\\Apps\\Scala\\playtest\\scala-play\\target\\scala-2.13\\resource_managed\\test"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -175,7 +175,7 @@
                 "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jline\\jline\\3.19.0\\jline-3.19.0.jar",
                 "C:\\Users\\greqo\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna\\5.3.1\\jna-5.3.1.jar"
             ],
-            "analysis": "C:\\Apps\\Scala\\scala-app\\scala_play_project\\target\\streams\\test\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.13.zip",
+            "analysis": "C:\\Apps\\Scala\\playtest\\scala-play\\target\\streams\\test\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.13.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -259,7 +259,7 @@
             "config": {
                 "home": "C:\\Program Files\\Java\\jdk-11.0.10",
                 "options": [
-                    "-Duser.dir=C:\\Apps\\Scala\\scala-app\\scala_play_project"
+                    "-Duser.dir=C:\\Apps\\Scala\\playtest\\scala-play"
                 ]
             },
             "mainClass": [
