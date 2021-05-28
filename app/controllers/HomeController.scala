@@ -50,7 +50,7 @@ class HomeController @Inject() (
       "email" -> text(),
       "password" -> text(),
       "street" -> text(),
-      "city" -> text(),
+      "city" -> text()
       // "phone" -> number(),
       //  "birthday" -> number()
 
