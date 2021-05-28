@@ -19,9 +19,13 @@ class UserDAO @Inject() (
 
   def insert(users: User): Future[Unit] = db.run(Users += users).map { _ => () }
 
+  /** Delete a user. */
+  def delete(id: Int): Future[Unit] =
+    db.run(Users.filter(_.id === id).delete).map(_ => ())
+
   private class UsersTable(tag: Tag) extends Table[User](tag, "USER") {
 
-    def id = column[Int]("ID", O.PrimaryKey)
+    def id = column[Int]("ID", O.PrimaryKey, O.AutoInc)
     def name = column[String]("NAME")
     def surname = column[String]("SURNAME")
     def email = column[String]("EMAIL")
