@@ -2,24 +2,7 @@
 @(users: Seq[User])
 
 @main("Welcome to Play") {
-<!-- <h1>User Administration!</h1>
-<div id="produkte">
-  <h2>Create user:</h2>
 
-  <form action="/insert/user" method="POST">
-    <input name="id" type="number" placeholder="id" />
-    <input name="name" type="text" placeholder="name" />
-    <input name="surname" type="text" placeholder="surname" />
-    <input name="email" type="text" placeholder="email" />
-    <input name="password" type="text" placeholder="password" />
-    <input name="street" type="text" placeholder="street" />
-    <input name="city" type="text" placeholder="city" />
-    <input name="phone" type="number" placeholder="phone" />
-    <input name="birthdate" type="number" placeholder="birthdate" />
-
-    <input type="submit"/>
-   
-  </form> -->
 
  <div class="main-block">
   <form action="/insert/user" method="POST">
@@ -104,6 +87,8 @@
     <button type="submit" href="/">Submit</button>
   </form> 
 
+
+
   <h2> Users:</h2>
   <table>
     <tr>
@@ -114,8 +99,7 @@
       <th>password</th>
       <th>street</th>
       <th>city</th>
-      <th>phone</th>
-      <th>birthdate</th>
+  
     </tr>
     @for(user <- users){ <tr>
       <td>@user.id</td>
@@ -125,99 +109,9 @@
       <td>@user.password</td>
       <td>@user.street</td>
       <td>@user.city</td>
-      <td>@user.phone</td>
-      <td>@user.birthdate</td>
+      
       </tr>
       }
   </table>
 </div>
 }
-
-
-<!-- 
-<div class="main-block">
-  <form action="/insert/user" method="POST">
-    <h1>CREATE A USER ACCOUNT</h1>
-    <fieldset>
-      <legend>
-        <h3>Account Details</h3>
-      </legend>
-      <div class="account-details">
-        <div><label>id*</label><input name="id" type="number" placeholder="id" required/></div>
-        <div><label>Email*</label><input name="email" type="text" placeholder="email" required/></div>
-        <div><label>Password*</label><input name="password" type="text" placeholder="password" required/></div>
-        
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>
-        <h3>Personal Details</h3>
-      </legend>
-      <div class="personal-details">
-        <div>
-          <div><label>Name*</label><input name="name" type="text" placeholder="name" required/></div>
-          <div><label>Surname*</label><input name="name" type="text" placeholder="name" required/></div>
-          <div><label>Phone</label><input name="phone" type="number" placeholder="phone" /></div>
-          <div><label>Street</label> <input name="street" type="text" placeholder="street" /></div>
-          <div><label>City</label>  <input name="city" type="text" placeholder="city" /></div>
-
-          <div>
-          </div>
-          <div>
-
-            <div class="birthdate">
-              <label>Birthdate*</label>
-              <div class="bdate-block">
-                <select class="day" name="birthdate">
-                  <option value=""></option>
-                  <option value="01">01</option>
-                  <option value="02">02</option>
-                  <option value="03">03</option>
-                  <option value="04">04</option>
-                  <option value="05">05</option>
-                  <option value="06">06</option>
-                  <option value="07">07</option>
-                  <option value="08">08</option>
-                  <option value="09">09</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                  <option value="13">13</option>
-                  <option value="14">14</option>
-                  <option value="15">15</option>
-                  <option value="16">16</option>
-                  <option value="17">17</option>
-                  <option value="18">18</option>
-                  <option value="19">19</option>
-                  <option value="20">20</option>
-                  <option value="21">21</option>
-                  <option value="22">22</option>
-                  <option value="23">23</option>
-                  <option value="24">24</option>
-                  <option value="25">25</option>
-                  <option value="26">26</option>
-                  <option value="27">27</option>
-                  <option value="28">28</option>
-                  <option value="29">29</option>
-                  <option value="30">30</option>
-                  <option value="31">31</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </fieldset>
-    <fieldset>
-      <legend>
-        <h3>Terms and Mailing</h3>
-      </legend>
-      <div class="terms-mailing">
-        <div class="checkbox">
-          <input type="checkbox" name="checkbox"><span>I accept the <a
-              href="https://www.w3docs.com/privacy-policy">Privacy Policy for W3Docs.</a></span>
-        </div>
-    </fieldset>
-    <button type="submit" href="/">Submit</button>
-  </form>
-</div>  -->
