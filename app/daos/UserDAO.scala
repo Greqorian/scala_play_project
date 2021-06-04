@@ -29,7 +29,7 @@ class UserDAO @Inject() (
     db.run(Users.filter(_.id === id).delete).map(_ => ())
 
 
- def changeID: Int = {
+ def incrementID: Int = {
     try {
       val userListF = all()
       val userList = Await.result(userListF, 1.second)

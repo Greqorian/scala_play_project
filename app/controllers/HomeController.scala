@@ -55,7 +55,12 @@ class HomeController @Inject() (
 
   def insertUser = Action.async { implicit request =>
     val user: User = userForm.bindFromRequest.get
+    user.id = UserDAO.incrementID
   
     userDao.insert(user).map(_ => Redirect(routes.HomeController.index))
   }
 }
+
+//  val taskObj = Tasks(taskDAO.autoIncrementID,task, username)
+//           taskDAO.insertTask(taskObj)
+//           Redirect(routes.TodoList.todoList(username))
