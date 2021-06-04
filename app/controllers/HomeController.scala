@@ -13,6 +13,12 @@ import play.api.mvc._
 
 import scala.concurrent.ExecutionContext
 
+/**
+ * This controller creates an `Action` to handle HTTP requests to the
+ * application's home page.
+ */
+
+
 @Singleton
 class HomeController @Inject() (
     userDao: UserDAO,
@@ -29,8 +35,8 @@ class HomeController @Inject() (
   }
 
   def env() = Action { implicit request: Request[AnyContent] =>
-    Ok("Nothing to see here")
-  //Ok(System.getenv("JDBC_DATABASE_URL"))
+    //Ok("Nothing to see here")
+  Ok(System.getenv("JDBC_DATABASE_URL"))
   }
 
 
@@ -49,6 +55,7 @@ class HomeController @Inject() (
 
   def insertUser = Action.async { implicit request =>
     val user: User = userForm.bindFromRequest.get
+  
     userDao.insert(user).map(_ => Redirect(routes.HomeController.index))
   }
 }
