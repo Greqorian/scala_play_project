@@ -19,9 +19,28 @@ class UserDAO @Inject() (
 
   def insert(users: User): Future[Unit] = db.run(Users += users).map { _ => () }
 
+  // def delete(userId: Int) = {
+  //   val del = Users.filter(_.id === userId).delete
+  //   db.run(del)
+  // }
+
   /** Delete a user. */
   def delete(id: Int): Future[Unit] =
     db.run(Users.filter(_.id === id).delete).map(_ => ())
+
+
+ def changeID: Int = {
+    try {
+      val userListF = all()
+      val userList = Await.result(userListF, 1.second)
+      val allIds = for (user <- userList) yield user.id
+      val newId = allIds.max + 1
+      newId
+    } catch {
+      case e : UnsupportedOperationException => 1
+    }
+  }
+
 
   private class UsersTable(tag: Tag) extends Table[User](tag, "USER") {
 
