@@ -6,7 +6,7 @@ import slick.jdbc.JdbcProfile
 
 import javax.inject.Inject
 import scala.concurrent.{ExecutionContext, Future}
-
+  
 class UserDAO @Inject() (
     protected val dbConfigProvider: DatabaseConfigProvider
 )(implicit executionContext: ExecutionContext)

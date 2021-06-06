@@ -32,7 +32,7 @@ class HomeController @Inject() (
     Ok("Nothing to see here")
   //Ok(System.getenv("JDBC_DATABASE_URL"))
   }  
-
+  
 
   val userForm = Form(
     mapping(
