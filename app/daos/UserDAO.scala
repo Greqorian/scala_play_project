@@ -26,7 +26,7 @@ class UserDAO @Inject() (
 
   /** Delete a user. */
   def delete(id: Int): Future[Unit] =
-    db.run(Users.filter(_.id === id).delete).map(_ => ())
+  db.run(Users.filter(_.id === id).delete).map(_ => ())
 
 
  def incrementID: Int = {
